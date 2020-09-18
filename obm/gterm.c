@@ -191,6 +191,7 @@ typedef struct {
 void GtermDestroy();
 void GtermClassDestroy();
 ObmObject GtermCreate();
+int createPixmap (ObmContext obm, char *name, int width, int height, int depth, Pixmap pixmap, char *pixels, unsigned long bg, unsigned long fg);
 
 static	int gtermActivate(), gtermActiveMapping(), gtermActiveRasters();
 static	int gtermAddCallback(), gtermDeleteCallback();
